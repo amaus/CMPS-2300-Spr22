@@ -8,7 +8,7 @@ int loops;
 void *worker(void *arg) {
     int i;
     for (i = 0; i < loops; i++) {
-	counter++;
+	counter++; // counter = counter + 1
     }
     pthread_exit(NULL);
 }
